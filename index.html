@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरी प्रोफेशनल वेबसाइट और पेमेंट पेज</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* हेडर और नेविगेशन */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 24px;
+        }
+        /* मुख्य वेबसाइट कंटेंट */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .main-content h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .main-content p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        /* पेमेंट और QR कोड सेक्शन (साइडबार) */
+        .payment-sidebar {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #27ae60;
+            height: fit-content;
+        }
+        .payment-sidebar h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .qr-image {
+            margin: 15px 0;
+            border: 2px solid #f1f1f1;
+            padding: 10px;
+            border-radius: 10px;
+            background: #fff;
+            max-width: 100%;
+            height: auto;
+        }
+        .upi-id {
+            background: #f1f2f6;
+            padding: 8px 12px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 14px;
+            color: #2980b9;
+            margin: 10px 0;
+        }
+        .footer-text {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        /* फुटर */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- वेबसाइट का ऊपरी हिस्सा -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>क्वालिटी सर्विसेस और आसान ऑनलाइन पेमेंट</p>
+    </header>
+
+    <!-- मुख्य भाग (वेबसाइट डिटेल्स + QR कोड बॉक्स) -->
+    <div class="container">
+        
+        <!-- बायां हिस्सा: आपकी वेबसाइट की जानकारी -->
+        <div class="main-content">
+            <h2>हमारे बारे में (About Us)</h2>
+            <p>हमारी वेबसाइट पर आपका स्वागत है। हम आपको बेहतरीन डिजिटल सेवाएं और प्रोडक्ट्स प्रदान करते हैं। हमारा लक्ष्य ग्राहकों को सबसे सुरक्षित और आसान अनुभव देना है।</p>
+            
+            <h2 style="margin-top: 30px;">हमारी सेवाएं (Our Services)</h2>
+            <p>✔️ बेहतरीन कस्टमर सपोर्ट<br>✔️ फास्ट डिलीवरी और रिस्पांस<br>✔️ 100% सुरक्षित भुगतान व्यवस्था</p>
+            
+            <p style="margin-top: 20px; font-weight: bold; color: #27ae60;">पेमेंट करने के लिए दाईं ओर दिए गए सुरक्षित UPI QR कोड को अपने मोबाइल ऐप से स्कैन करें।</p>
+        </div>
+
+        <!-- दायां हिस्सा: ऑल-इन-वन सुरक्षित QR कोड पेमेंट बॉक्स -->
+        <div class="payment-sidebar">
+            <h3>स्कैन करके पे करें</h3>
+            
+            <!-- गूगल QR कोड API जो सीधे आपकी UPI ID से जुड़ा है -->
+            <img src="https://qrserver.com" alt="UPI QR Code" class="qr-image">
+            
+            <div>
+                <span class="upi-id">UPI ID: 8959817310@ybl</span>
+            </div>
+            
+            <p class="footer-text">PhonePe, Google Pay, Paytm, BHIM या किसी भी बैंकिंग UPI ऐप से स्कैन करके भुगतान सुरक्षित रूप से पूरा करें।</p>
+        </div>
+
+    </div>
+
+    <!-- वेबसाइट का निचला हिस्सा -->
+    <footer>
+        <p>&copy; 2026 सर्वाधिकार सुरक्षित | सुरक्षित भुगतान प्रणाली</p>
+    </footer>
+
+</body>
+</html>
